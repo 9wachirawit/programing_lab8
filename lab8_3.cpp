@@ -7,28 +7,28 @@ int age,height,bounty;
 string character;
 cout << "Enter your age: ";
 cin >> age;
-if(height <= 25){
-    cout << "\nEnter your height: ";
+if(age <= 25){
+    cout << "Enter your height: ";
     cin >> height;
     if(height < 100){
     character = "Chopper";
     }else if (height < 180){
     character = "Usopp";
-    }
-    cout << "\nEnter your bounty: ";
+    }else{
+    cout << "Enter your bounty: ";
     cin >> bounty;
     if(bounty > 1100000000){
     character = "Zoro";
     }else{
     character = "Sanji";
-    }
-}else if (age<60)
+    }}
+}else if (age<=60)
 {
-    cout << "\nEnter your bounty: ";
+    cout << "Enter your bounty: ";
     cin >> bounty;
     if (bounty > 500000000)
     {
-        character = "Jimbe";
+        character = "Jinbe";
     }else{
         character = "Franky";
     }
